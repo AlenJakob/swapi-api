@@ -8,6 +8,7 @@
 import "material-icons/iconfont/material-icons.css";
 import EmployeesList from "./components/EmployeesList";
 import Card from "./components/Card";
+import "./css/Rwd.css";
 export default {
   name: "App",
   components: {

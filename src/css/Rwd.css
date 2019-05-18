@@ -1,0 +1,66 @@
+/* media queries */
+
+
+@media (max-width: 768px) {
+    .card_list-container {
+        width: 560px !important;
+        padding: 2.5rem 0 !important;
+    }
+
+    .sword-red {
+        -webkit-transform: scale(.8);
+        transform: scale(.8);
+    }
+
+    .sword-blue {
+        -webkit-transform: scale(.8);
+        transform: scale(.8);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .row_details-container {
+        flex-direction: column-reverse !important;
+    }
+    .row_details-container div {
+        margin:.5rem 0;
+    }
+    .card_list-container {
+        width: calc(100% - 3rem) !important;
+        padding: 2.5rem 0 !important;
+    }
+
+    .sword-red {
+        -webkit-transform: scale(.7);
+        transform: scale(.7);
+        height: 25px;
+    }
+
+    .sword-blue {
+        -webkit-transform: scale(.7);
+        transform: scale(.7);
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card_list-container {
+        width: 360px !important;
+        padding: 2.5rem 0 !important;
+    }
+
+    .sword-red {
+        -webkit-transform: scale(.6.5);
+        transform: scale(.6.5);
+        height: 20px;
+    }
+
+    .sword-blue {
+        -webkit-transform: scale(.6.5);
+        transform: scale(.6.5);
+        height: 20px;
+    }
+
+
+}

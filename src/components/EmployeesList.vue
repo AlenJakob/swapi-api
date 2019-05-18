@@ -2,7 +2,7 @@
   <div class="card_list-container">
     <div>
       <HeaderSword/>
-      <Card :EmployeeList="EmployeeList" />
+      <Card :EmployeeList="EmployeeList"/>
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
     HeaderSword,
     EmployeeSword
   },
-data() {
+  data() {
     return {
       msg: "Swapi Api App",
       EmployeeList: []
@@ -34,22 +34,23 @@ data() {
       .get("https://swapi.co/api/people")
       .then(res => (this.EmployeeList = res.data.results))
       .catch(err => new err());
-  }
+      console.log(listUsers)
+  },
+ 
 };
-
-
 </script>
 
 <style scoped>
 .card_list-container {
-  padding: 2rem 1rem 1rem 1rem;
+  overflow: hidden;
+  padding: 3rem 1rem 1rem 1rem;
   border-radius: 5px;
   margin: 0 auto;
   background: rgba(42, 56, 65, 1);
   color: rgba(159, 170, 175, 1);
   box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
-  width: 600px;
+  width: calc(100% - 10rem);
+  max-width:640px;
   min-height: 500px;
 }
-
 </style>

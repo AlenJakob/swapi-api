@@ -1,6 +1,8 @@
 <template>
   <div class="container_sword-blue">
-    <div class="sword-blue"></div>
+    <div class="sword-blue">
+      <h3 class="header_text">Employees list</h3>
+    </div>
   </div>
 </template>
 
@@ -9,23 +11,25 @@ export default {};
 </script>
 
 <style>
-.container_sword-blue {
-  
-}
 .sword-blue {
-  border: 1px solid rgba(0, 0, 0, 0.1);
   background-image: url("https://i.ibb.co/Bn6Ds5c/blue-Sword.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-width: 540px;
   height: 35px;
   position: relative;
 }
-.sword-blue:before {
+/* .sword-blue:before {
   content: "Employees list";
   position: absolute;
   left: 7%;
   top: -20px;
+} */
+.header_text {
+  position: absolute;
+  top: -80%;
+  left: 7%;
+  font-weight: 100;
+  margin: 0;
 }
 </style>
